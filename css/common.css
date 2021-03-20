@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0; width:100%; transform: skew(-0.03deg);}
+img,fieldset{border:0;}
+li img,dd img,dt img,label img{vertical-align:top;}
+li{line-height:100%;list-style:none}
+table{border-collapse:collapse;width:100%;}
+input,select,textarea,button{font-family:'Roboto', 'NanumSquare', '나눔 스퀘어','Noto Sans KR','nanum', '나눔 고딕', '맑은 고딕','malgunGothic', 'dotum' ,'돋움',sans-serif; font-size:15px;color:#666; transform: skew(-0.03deg);}
+input,select,textarea,button { vertical-align:middle; border-radius:0;-webkit-appearance:none; appearance:none; box-sizing:border-box; }
+img,input,select{vertical-align:middle;}
+address,caption,em{font-weight:normal;font-style:normal;}
+hr{display:none;}
+
+html{width:100%; }
+body{ width:100%;font-size:16px;color:#666;line-height:1.5; font-family: 'Roboto', 'NanumSquare', '나눔 스퀘어', 'Noto Sans KR','nanum', '나눔 고딕', '맑은 고딕','malgunGothic', 'dotum' ,'돋움',sans-serif; }
+a{color:#666;text-decoration:none;text-decoration:none; font-family: 'Roboto', 'NanumSquare', '나눔 스퀘어', 'Noto Sans KR','nanum', '나눔 고딕', '맑은 고딕','malgunGothic', 'dotum' ,'돋움',sans-serif; font-size:12px; line-height:1.5; color:#666; width:100%; height:100% ;}
+a:visited,a:hover,a:active,a:focus{color:#666;}
+caption,legend{width:0;height:0;font-size:0;text-indent:-9999px;overflow:hidden;}
+p, a, strong, em {transform: skew(-0.03deg);}
+
+#skipNav a{display:block;position:absolute;left:0;top:-10000px;text-align: center;width:100%;height:30px;z-index: 500;line-height:30px;font-weight:bold;font-size:14px; }
+#skipNav a:hover,#skipNav a:focus,#skipNav a:active{background:#034eac;top:0;color: #fff; font-weight: normal;}
+h1,h2,h3,h4,h5,h6{font-family:'Roboto', 'NanumSquare', '나눔 스퀘어', 'Noto Sans KR','nanum', '나눔 고딕', '맑은 고딕','malgunGothic', 'dotum' ,'돋움',sans-serif; font-size:20px; color:#333; transform: skew(-0.03deg);}
+.hide {width:0; height:0; margin:0; padding:0; position:absolute; left:0; top:0;font-size:0; text-indent:-9999px; overflow:hidden; visibility:hidden}
+.cf::after {content:""; display:block; clear:both; visibility:hidden; width:0; height:0; font-size:0;}
+
+
+/* layout  - header , footer  */
+
+#wrap {width: 100%; min-width:1600px; }
+.inner {width: 1180px; margin: auto; position: relative; }
+#header {width: 100%; height: 100px; background: url(../images/common/header_bgline.jpg) 0 0 repeat-x; transition: 0.5s; position: absolute;left: 0;top: 0; z-index: 1000;}
+#header.on {height: 340px;}
+
+#header h1 {position: absolute; left: 0; top: 40px;}
+
+#nav {position: absolute; left: 350px; top:48px;}
+#gnb {position: relative;}
+#gnb li {float: left; margin-left: 35px; bor der: 1px solid #000;}
+#gnb li:first-child { margin-left: 0px;}
+#gnb li a {font-size: 18px; font-weight: 800; color: #333; transition: 0.3s;}
+#gnb li:hover > a {color: #034ea2;}
+
+/* 메뉴 밑줄 */
+#gnb li ul::before {content:""; display: block; width: 65px; height: 2px; background: #034ea2; transform:scaleX(0); transition:0.3s; posit ion: absolute; left: 0; top: -2px; }
+/* #gnb li:hover ul::before {transform: scaleX(1);} */
+
+#gnb > li > ul {position: absolute; left: 0; top: 55px; display: none; z-index: 10; padding-top: 10px; box-sizing: border-box;}
+#gnb > li > ul {position: absolute; left: 0; top: 55px; display: none; z-index: 10; padding-top: 10px; box-sizing: border-box;}
+#gnb li.menu1 ul {left: 0px;}
+#gnb li.menu2 ul {left: 100px;}
+#gnb li.menu3 ul {left: 210px;}
+#gnb li.menu4 ul {left: 307px;}
+#gnb li.menu5 ul {left: 400px;}
+#gnb li.menu6 ul {left: 500px;width: 80px;}
+#gnb li ul li {float:none; margin-left: 0; padding: 5px 0; }
+#gnb li ul li::after {content:""; displ ay: none; z-index: 10;}
+#gnb li ul li a {display: block; font-weight: normal; font-size: 14px; transition: 0.3s; }
+#gnb li ul li a:hover {color: #034ea2; font-weight: 700; }
+
+#header .side-menu {position: absolute; right: 0; top: 45px; width: 215px; height: 30px; }
+#header .side-menu .lan {margin-left: 20px;}
+#header .side-menu .lan li {float: left; margin-right: 15px; margin-top: 7px;}
+#header .side-menu .lan li a {letter-spacing: -0.6px; }
+#header .side-menu .lan li:last-child a {font-weight: 700; color: #034ea2;}
+#header .side-menu .lnr {font-size: 20px; font-weight: 600; color: #034ea2; margin-left: 10px; cursor: pointer;}
+#header .side-menu .lnr:first-of-type {margin-left: 10px;}
+#header .side-menu .lnr:last-child {font-size: 25px; right:30px;}
+
+#header .search-form {display: none; position: absolute; z-index: 100000; top: 100px; right: 36px; padding: 12px 20px; background: #fff; border: 1px solid #eee;}
+#header .search-form .form {}
+#header .search-form .form input[type=search] {width:138px; border: none; border-bottom: 2px solid #ababab; font-size: 12px; color: #ababab;padding:5px 0;}
+#header .search-form .form button {width: 26px; height: 26px; border: none; border-bottom: 2px solid #ababab; margin-left: -4px; cursor: pointer; background: url(../images/common/lnr-magnifier.svg) 50% 50% no-repeat; background-size: 15px; padding: 5px 0;}
+
+#container {height: 100%; }
+#container::after {content:""; display: block; clear: both;}
+
+#content {}
+
+#footer {width: 100%; height: auto; background: #33404f;}
+#footer .inner {}
+#footer .foot {font-size: 12px; color: #fff; text-align: center;}
+
+#footer .foot-top {width: 1000px; padding-top: 68px;}
+#footer .foot-top > p {display: inline-block; margin-right: 30px;}
+#footer .foot-top > p:nth-child(1) {font-weight: 700;}
+#footer .foot-top > p a {color: #fff;}
+
+#footer .foot-top .family-site {position: absolute; right: 176px; top: 55px; width: 160px; }
+#footer .foot-top .family-site > p {}
+#footer .foot-top .family-site > p > a {display: block; color: #fff; font-size: 14px; width: 120px; height: 40px; background: #495868; line-height: 40px; box-sizing: border-box;}
+#footer .foot-top .family-site > a {position: absolute; right: -1px; top: 0; width: 40px; height: 40px; font-size: 16px; color: #fff; line-height: 40px; background: #495868; border-left: 1px solid #33404f; box-sizing: border-box;}
+#footer .foot-top .family-site ul {position: absolute; right: -1px; bottom:253px; width: 161px; height: 40px; display: none; }
+#footer .foot-top .family-site ul.on {display: block;}
+#footer .foot-top .family-site ul li {}
+#footer .foot-top .family-site ul li a {display: block; color: #fff; background: #495868; border: 1px solid #404e5c; width: 160px; height: 40px; line-height: 40px;}
+#footer .foot-top::after {content:""; display: block; width: 834px; height: 1px; background: #495868; position: absolute; left: 175px; top: 120px; }
+
+#footer .foot-bottom {padding: 65px 0 62px;}
+#footer .foot-bottom address {}
+#footer .foot-bottom p {}
+
+#footer .top-btn {position: absolute; right: -215px; bottom: 100px; width: 50px; height: 50px; background: #495868; text-align: center;}
+#footer .top-btn a {}
+#footer .top-btn a span.lnr {font-size: 20px; color: #fff; line-height: 50px; }
+
+/* sublayout */
+
+#subVisual {width: 100%; margin-top:100px; height: 290px; background-position: 50% 50%; background: no-repeat; background-size: cover; position: relative; text-align: center;}
+#subVisual.ceo-visual {background-image: url(../images/sublayout/visual_ceo.jpg);}
+#subVisual.product-visual {background-image: url(../images/sublayout/visual_product.jpg);}
+#subVisual.people-visual {background-image: url(../images/sublayout/visual_people.jpg);}
+#subVisual.notice-visual {background-image: url(../images/sublayout/visual_notice.jpg);}
+
+#subVisual .inner {}
+#subVisual h2 {position: absolute; left: 890px; top: 107px; font-size: 38px; color: #fff; }
+
+#subMenu {position: absolute; left: 0; bottom: 0; width: 100%; background: rgba(20,97,198,0.7);}
+.ceo-visual .ceo-sub-bg {position: absolute; left: 0; top: 0;  width: 300px; height: 300px; background: #000;}
+#subMenu ul {height: 60px; margin: auto; }
+#subMenu ul.ceo-menu {width: 620px;}
+#subMenu ul.product-menu {width: 500px;}
+#subMenu ul.people-menu {width: 500px;}
+#subMenu ul.notice-menu {width: 280px;}
+#subMenu ul li {float: left; margin-right: 0px;}
+#subMenu ul li:last-child {margin-right: 0;}
+#subMenu ul li a {display: block; font-size: 16px; color: #fff; font-weight: 300; width: 120px; height: 60px; line-height: 60px;}
+#subMenu ul li.w140 a {width: 140px;}
+#subMenu ul li a:hover {background: #fff; color: #000; font-weight: normal;}
+#subMenu ul li.on a {background: #fff; color: #000; font-weight: normal;}
+
+.con-top {}
+.con-top .inner {position: relative;}
+.con-top h3 {font-size: 30px; padding-top: 75px; padding-bottom: 20px; border-bottom: 1px solid #dcdcdc;} 
+.con-top p {margin-top: 20px;} 
+.con-top h3::before {content:""; display: block; width: 4px; height: 30px; background: #333;  position: absolute; left: -10px; top: 84px;}
+.con-top ul.path {position: absolute; right: 0; top: 80px; padding-left: 10px; }
+.con-top ul.path li {float: left; margin-right: 20px; position: relative;}
+.con-top ul.path li::before {content:""; display: block; width: 2px; height: 7px; background: #dcdcdc; position: absolute; top:7px; left:-10px;}
+.con-top ul.path li:first-child::before {content:""; display: none; }
+.con-top ul.path li a {font-size: 13px; font-weight: 300;}
+.con-top ul.path li:last-child a {font-weight: 700;}
+.con-top ul.path li a .lnr {color: #333;}
+

@@ -1,0 +1,88 @@
+/* ceo-인사말 */
+.ceo {padding: 50px 0 100px;}
+.ceo .ceo-txt {float: left; width: 525px;}
+.ceo .ceo-txt p {margin-bottom: 30px;}
+.ceo .ceo-img {float: right; width: 555px; } 
+
+/* product-제품 */
+.product {}
+.product .inner {}
+.product .product-list {margin-top: 72px; margin-bottom: 120px; }
+.product .product-list li {position: relative; width: 100%; height: 500px;}
+.product .product-list li .pro-txt {width: 560px; box-sizing: border-box; padding-top: 24px; position: relative;}
+.product .product-list li:first-child .pro-txt {width: 610px;}
+.product .product-list li .pro-txt strong {display: block; font-size: 30px; margin-top: 24px; margin-bottom: 24px; color: #333;}
+.product .product-list li .pro-txt strong::before {content: ""; display: block; width: 80px; height: 30px; background: url(../images/content/ico_title.jpg) 0 0 no-repeat; position: absolute; left: -40px; top: -20px; }
+.product .product-list li .pro-txt strong::after {content: ""; display: block; width: 20px; height: 3px; background: #333; margin-top: 30px;}
+.product .product-list li .pro-txt em {display: block; color: #034ea2; font-weight: 700; margin-bottom: 30px;}
+.product .product-list li .pro-txt p {margin-bottom: 24px; line-height: 1.5;}
+.product .product-list li:nth-child(3n+2) .pro-txt {margin-left: 600px;}
+.product .product-list li img {position: absolute; right: 0; top: 0;}
+.product .product-list li img:nth-child(3n+2) {position: absolute; right: 0; top: 0px;}
+.product .product-list li:nth-child(3n+2) img {left: 0; top: -50px;}
+.product .product-list li.cen-list {height: 900px; margin:175px 0 150px; position: relative; line-height: 1.5;}
+.product .product-list li.cen-list .cen-title {position: absolute; left: 0; top: 0;  font-size: 18px; }
+.product .product-list li.cen-list .cen-title strong {display: block; font-size: 38px; font-weight: 700; color: #333; margin-bottom: 20px;}
+.product .product-list li.cen-list .cen-title strong::before {content: ""; display: block; width: 80px; height: 30px; background: url(../images/content/ico_title.jpg) 0 0 no-repeat; position: absolute; left: -40px; top: -20px;}
+.product .product-list li.cen-list .cen-title strong::after {content:""; display: block; width: 56px; height: 3px; background: #333;margin: 15px 0 10px;}
+.product .product-list li.cen-list .cen-title em {display: block; color: #034ea2; margin-bottom: 10px;}
+.product .product-list li.cen-list .cen-title p {line-height: 21px;}
+.product .product-list li.cen-list img {z-index: 10; width: 797px; height: 658px;}
+.product .cen-bg {width: 100%; height: 300px; background: url(../images/content/product_cen_bg.jpg) 0 0 no-repeat; position: absolute; left: 0; top: 2220px;}
+.product .product-list li.cen-list .cen-txt {position: absolute; left: 0; bottom: 40px;}
+.product .product-list li.cen-list .cen-txt p {font-size: 20px;  margin-bottom: 24px; color: #555;}
+
+
+/* people-인재상 */
+.people {}
+.people .inner {}
+.people .people-list {margin-top: 100px;}
+.people .people-list li { height: 310px; position: relative; margin-bottom: 130px;}
+.people .people-list li img {box-shadow: 5px 5px 5px #999; position: absolute; left: 0;top: 0; }
+.people .people-list li .people-txt {margin-left: 640px;}
+.people .people-list li .people-txt strong {display: block; font-size: 38px; font-weight: 700;  padding-top: 45px; margin-bottom: 40px; color: #222;}
+.people .people-list li .people-txt em {display: block; font-size: 20px; font-weight: 700; margin-bottom: 25px; color: #333;}
+.people .people-list li .people-txt p {line-height: 1.5;}
+
+.people .people-list li:nth-child(2n+1) .people-txt strong {padding-top: 60px;}
+.people .people-list li:nth-child(2) img {left:600px;}
+.people .people-list li:nth-child(2) .people-txt {margin-left: 0;}
+
+/* notice-공지사항 */
+.notice {}
+.notice .inner {}
+.notice .nt-tb {}
+.notice .nt-tb strong {display: block; text-align: center; color: #333; font-size: 40px;font-weight: 900; margin:70px 0 50px;}
+.notice .nt-tb .form {margin-bottom: 30px;}
+.notice .nt-tb .form form {float: right;}
+.notice .nt-tb .form select {text-indent: 10px;width: 130px; height: 32px; border: 1px solid #ccc; background: url(../images/content/ico_moreview.png) 95% 50% no-repeat;}
+.notice .nt-tb .form select option {}
+.notice .nt-tb .form input[type=search] {text-indent: 10px; margin-left: 10px; width: 250px; height: 32px; border: 1px solid #ccc; border-right: none;}
+.notice .nt-tb .form button {width: 32px; margin-left: -5px; height: 32px; background: url(../images/content/ico_search.png) 50% 50% no-repeat; border: 1px solid #ccc; border-left: none}
+
+.notice .nt-tb table {color: #333; text-align: center;}
+.notice .nt-tb table colgroup {}
+.notice .nt-tb table colgroup .w102 {width: 102px;}
+.notice .nt-tb table colgroup .title {}
+.notice .nt-tb table colgroup .w128 {width: 128px;}
+.notice .nt-tb table thead th, .notice .nt-tb table tbody td {padding: 22px 0; border-bottom: 1px solid #ccc;}
+
+.notice .nt-tb table thead {}
+.notice .nt-tb table thead tr {}
+.notice .nt-tb table thead tr th {border-top: 1px solid #333; background: #f5f5f5; font-weight: 600;}
+.notice .nt-tb table tbody {}
+.notice .nt-tb table tbody tr {}
+.notice .nt-tb table tbody tr td {}
+.notice .nt-tb table tbody tr td:nth-child(2) {text-align: left; text-indent: 10px;}
+.notice .nt-tb table tbody tr td:nth-child(2) a {font-size: 16px; color: #333; }
+
+.notice .nt-tb .paging {padding: 80px 0 70px;}
+.notice .nt-tb .paging .pagination-list {width: 620px; margin: 0 auto;}
+.notice .nt-tb .paging .pagination-list li {float: left;}
+.notice .nt-tb .paging .pagination-list li.pg {border: 1px solid #ccc; margin-right: 10px;}
+.notice .nt-tb .paging .pagination-list li.first {background: url(../images/content/ico_first.png) center center no-repeat; }
+.notice .nt-tb .paging .pagination-list li.prev {background: url(../images/content/ico_prev.png) center center no-repeat; }
+.notice .nt-tb .paging .pagination-list li.next {background: url(../images/content/ico_next.png) center center no-repeat; margin-left: 10px;}
+.notice .nt-tb .paging .pagination-list li.last {background: url(../images/content/ico_last.png) center center no-repeat; margin-right: 0;}
+.notice .nt-tb .paging .pagination-list li a {display: block; text-align: center; width: 40px; height: 40px; font-size: 14px; line-height: 40px;}
+.notice .nt-tb .paging .pagination-list li.on a {font-weight: 600; color: #3b8c94; text-decoration: underline #3b8c94;}
